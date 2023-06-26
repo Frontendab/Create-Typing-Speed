@@ -1,0 +1,276 @@
+:root{
+    --main-color: #0075ff;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Tahoma, Verdana, sans-serif;
+    background: #ddd;
+}
+.game{
+    margin: auto;
+}
+.game .name-game{
+    text-align: center;
+    background: var(--main-color);
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.game .divSecondePrante{
+    position: absolute;
+    right: -13%;
+    left: 37%;
+    transform: translate(-34%);
+}
+.game .message{
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.game .message .lvl ,.seconde-level{
+    color: green;
+}
+.game .message .lvl:before ,.seconde-level:before{
+    content: '[ ';
+}
+.game .message .lvl:after ,.seconde-level:after{
+    content: ' ]';
+}
+.game .button-start{
+    text-align: center;
+    background: orange;
+    border-radius: 5px;
+    padding: 20px;
+    color: #FFF;
+    font-size: 25px;
+    letter-spacing: 1px;
+    opacity: .6;
+    cursor: pointer;
+    transition: .2s;
+}
+.game .button-start:hover{
+    opacity: 1;
+}
+.game input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    user-select: none;
+    text-align: center;
+    font-size: 15px;
+}
+.game input:focus{
+    outline: none;
+}
+.game .divSecondePrante .theWords{
+    text-align: center;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 1em;
+}
+.game .divSecondePrante .theWords > * {
+  flex: 1;
+}
+.game .divSecondePrante .theWords span{
+    background: var(--main-color);
+    padding: 15px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control{
+    display: flex;
+    justify-content: space-between;
+    background: #FFF;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.control .score span:not(:last-child){
+    color: green;
+}
+.control .time-left span{
+    color: green;
+}
+.boxs{
+    display: flex;
+    justify-content: space-between;
+    background: #FFF;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.boxs span{
+    background: #585bbb;
+    padding: 7px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    opacity: .7;
+    transition: opacity .2s;
+}
+.boxs span:hover{
+    opacity: 1;
+}
+.easy.click{
+    opacity: 1;
+}
+.normal.click{
+    opacity: 1;
+}
+.hard.click{
+    opacity: 1;
+}
+.pranteBtn{
+    text-align: center;
+    margin: 10px 0;
+}
+.pranteBtn .span-word{
+    font-size: 72px;
+}
+.divSecondePrante .end-game-good{
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 132px;
+}
+.divSecondePrante .end-game-good .youAreWinner{
+    color: green;
+    font-size: 104px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 95px;
+}
+.divSecondePrante .div-score {
+    text-align: center;
+    height: 100px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.divSecondePrante .div-score .span-score-good{
+    font-size: 45px;
+}
+.divSecondePrante .div-score .span-score-good .scoreEnd-Num::before{
+    content: '( ';
+    color: var(--main-color);
+}
+.divSecondePrante .div-score .span-score-good .scoreEnd-Num::after{
+    content: ' )';
+    color: var(--main-color);
+}
+.restart-game{
+    font-size: 52px;
+    background: orange;
+    border-radius: 35px;
+    padding: 16px;
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity .2s;
+    color: #Fff;
+    box-shadow: 0 0 0 5px #FFF inset;
+}
+.restart-game:hover{
+    opacity: 1;
+}
+.goodLuckAgain{
+    text-align: center;
+    margin-top: 73px;
+    margin-bottom: 87px;
+}
+.endTime{
+    color: red;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 110px;
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .game .message {
+        line-height: 1.3;
+    }
+    .pranteBtn .span-word {
+        font-size: 62px;
+    }
+    .divSecondePrante .end-game-good {
+        margin-top: 62px;
+        margin-bottom: 126px;
+    }
+    .divSecondePrante .end-game-good .youAreWinner {
+        font-size: 85px;
+    }
+    .divSecondePrante .div-score {
+        height: 100px;
+    }
+    .divSecondePrante .div-score .span-score-good {
+        font-size: 32px;
+    }
+    .restart-game {
+        font-size: 50px;
+    }
+    .goodLuckAgain{
+    margin-top: 73px;
+    margin-bottom: 55px;
+}
+.endTime{
+    font-size: 73px;
+    margin-bottom: 110px;
+}
+    }
+    .divSecondePrante .end-game-good .youAreWinner {
+        margin-bottom: 110px;
+    }
+@media screen and (max-width: 600px) {
+    .pranteBtn .span-word {
+        font-size: 57px;
+    }    
+    .game .message {
+        line-height: 1.3;
+    }
+    .divSecondePrante .end-game-good{
+        margin-bottom: 175px;
+    }
+    .divSecondePrante .end-game-good .youAreWinner{
+        font-size: 62px;
+        margin-bottom: 135px;
+    }
+    .divSecondePrante .div-score {
+        height: 73px;
+    }
+    .divSecondePrante .div-score .span-score-good {
+        font-size: 27px;
+    }
+    .restart-game{
+        font-size: 45px;
+    }
+    .divSecondePrante .end-game-good {
+        margin-top: 45px;
+    }
+    .goodLuckAgain {
+    margin-bottom: 45px;
+}
+.endTime {
+    font-size: 60px;
+}
+}

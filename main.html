@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing</title>
+</head>
+<body>
+    <div class="game">
+        <div class="name-game">Typing Speed Test Game</div>
+        
+        <div class="divSecondePrante">
+            <div class="message"> You Are Playing On
+                <span class="lvl"></span> Level Have <span class="seconde-level"></span> Secondes To Type The Word
+            </div>
+            <div class="pranteBtn">
+                <div class="button-start">Start Playing</div>
+            </div>
+            
+            <input type="text">
+            <div class="theWords"></div>
+            <div class="control">
+                <div class="time-left">Time Left : <span class="span-time-left"></span> Seconds</div>
+                <div class="score">Score : <span class="span-score">0</span> From <span class="span-length-theWords"></span></div>
+            </div>
+            <div class="boxs">
+                <p>Levels :</p>
+                <div><span class="easy">Easy</span></div>
+                <div><span class="normal">Normal</span></div>
+                <div><span class="hard">Hard</span></div>
+            </div>
+        </div>
+    </div>
+        <audio src="audio/startMusic.mp3" id="starMusic" autoplay></audio>
+    <script src="index.js"></script>
+</body>
+</html>
